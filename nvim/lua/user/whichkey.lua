@@ -170,7 +170,16 @@ local mappings = {
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
   },
-
+  d = {
+    name = "Debug",
+    s = { "<cmd>NodeInspectStart<cr>", "Start" },
+    r = { "<cmd>NodeInspectRun<cr>", "Run" },
+    x = { "<cmd>NodeInspectStop<cr>", "Stop" },
+    c = { "<cmd>NodeInspectConnect('127.0.0.1:9229')<cr>", "Connect" },
+    t = { "<cmd>NodeInspectToggleBreakpoint<cr>", "Toggle" },
+    i = { "<cmd>NodeInspectStepInto<cr>", "Step into" },
+    o = { "<cmd>NodeInspectStepOver<cr>", "Step over" },
+  },
   t = {
     name = "Terminal",
     n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },

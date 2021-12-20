@@ -58,6 +58,12 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use {
+    "blackCauldron7/surround.nvim",
+    config = function()
+      require"surround".setup {mappings_style = "surround"}
+    end
+  }
 
   -- Colorschemes
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -98,7 +104,7 @@ return packer.startup(function(use)
 
   -- Language
   use "sheerun/vim-polyglot"
-  
+  use "eliba2/vim-node-inspect"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
