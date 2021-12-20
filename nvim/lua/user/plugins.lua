@@ -87,7 +87,7 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-  use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+  use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -105,6 +105,13 @@ return packer.startup(function(use)
   -- Language
   use "sheerun/vim-polyglot"
   use "eliba2/vim-node-inspect"
+  use {
+    "heavenshell/vim-jsdoc",
+    run = "make install",
+    ft = {
+      "javascript", "javascript.jsx", "typescript", "typescript.tsx"
+    },
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
