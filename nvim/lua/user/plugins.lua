@@ -69,6 +69,29 @@ return packer.startup(function(use)
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   use "folke/tokyonight.nvim"
+  use "RRethy/nvim-base16"
+
+  -- UI Customisation
+  use {
+    "folke/twilight.nvim",
+    config = function()
+      require("twilight").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
+  use {
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -98,6 +121,7 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
+  use "p00f/nvim-ts-rainbow"
 
   -- Git
   use "lewis6991/gitsigns.nvim"
