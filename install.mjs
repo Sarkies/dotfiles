@@ -11,9 +11,13 @@ await $`brew install httpie`;
 await $`brew install cask`;
 await $`brew install neovim`;
 await $`brew install tmux`;
-await $`brew install gh`;
 await $`brew install fzf`;
 await $`brew install ripgrep`;
+
+await $`brew install awscli`;
+await $`brew install --cas aws-vault`;
+await $`brew install gh`;
+await $`brew install act`;
 
 console.log(chalk.blue("Installing main cask dependencies"));
 await $`brew install --cask iterm2`;
