@@ -180,6 +180,7 @@ local mappings = {
     t = { "<cmd>NodeInspectToggleBreakpoint<cr>", "Toggle" },
     i = { "<cmd>NodeInspectStepInto<cr>", "Step into" },
     o = { "<cmd>NodeInspectStepOver<cr>", "Step over" },
+    l = { "<cmd>TroubleToggle<cr>", "List Errors" },
   },
   t = {
     name = "Terminal",

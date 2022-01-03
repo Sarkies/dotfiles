@@ -70,18 +70,9 @@ lspconfig.tsserver.setup({
 
 null_ls.setup({
     sources = {
-        diagnostics.eslint_d.with({
-            prefer_local = "node_modules/.bin",
-        }),
-        code_actions.eslint_d.with({
-            prefer_local = "node_modules/.bin",
-        }),
-        -- formatting.eslint_d.with({
-        --     prefer_local = "node_modules/.bin",
-        -- }),
-        formatting.prettier.with({
-            prefer_local = "node_modules/.bin",
-        })
+        diagnostics.eslint_d,
+        code_actions.eslint_d,
+        formatting.eslint_d
     },
     on_attach = on_attach,
 })
