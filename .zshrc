@@ -74,7 +74,7 @@ ZSH_THEME="cloud"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(alias-finder brew common-aliases copydir copyfile docker docker-compose dotenv encode64 extract git git-extras
+plugins=(alias-finder brew common-aliases copypath copyfile docker docker-compose dotenv encode64 extract git git-extras
   jira zsh-autosuggestions zsh-syntax-highlighting jsontools node npm macos urltools vi-mode vscode web-search z wd)
 
 source $ZSH/oh-my-zsh.sh
@@ -118,7 +118,9 @@ alias k="kubectl"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+# # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"

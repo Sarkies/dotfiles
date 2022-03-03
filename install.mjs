@@ -28,6 +28,7 @@ await $`brew install --cask telegram`;
 await $`brew install --cask visual-studio-code`;
 await $`brew install --cask notion`;
 await $`brew install --cask calibre`;
+await $`brew install --cask insomnia`;
 
 await $`sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`;
 await $`wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh`;
